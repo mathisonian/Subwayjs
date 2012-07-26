@@ -181,13 +181,13 @@ function LegendItem( start, end, subwayLine ){
  
 function onKeyDown(event){
     //this function fires when a key is pressed.
-    if (event.key =='w' ){
+    if (event.key =='w' || event.keyCode == 37){
         current_position.onkeydownNode('N');}
-    if (event.key =='a' ){
+    if (event.key =='a' || event.keyCode == 38){
         current_position.onkeydownNode('W');}
-    if (event.key == 'd'){
+    if (event.key == 'd' || event.keyCode == 39){
         current_position.onkeydownNode('E');}
-    if (event.key == 's'){
+    if (event.key == 's' || event.keyCode == 40){
         current_position.onkeydownNode('S');}
         
     if (event.key in oc(['enter', 'space']) ){
